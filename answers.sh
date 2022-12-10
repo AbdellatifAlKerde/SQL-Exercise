@@ -13,6 +13,8 @@ WHERE name = "Basma"
 SET Points = 150
 WHERE name = "Alex"
 
+---------------------------------------------------------
+
 Creating Table:
 
 CREATE TABLE graduates (
@@ -36,3 +38,21 @@ WHERE ID = 4
 
 12- DELETE FROM students
 WHERE ID = 4
+
+---------------------------------------------------------
+
+Joins: 
+
+14- CREATE TABLE made_date (
+	name TEXT,
+	Comp_Name TEXT,
+	Comp_Date INTEGER
+)
+
+15- SELECT * FROM companies
+WHERE date < 2000
+
+16- SELECT Company FROM employees
+WHERE Role = "Graphic Designer"
+
+
