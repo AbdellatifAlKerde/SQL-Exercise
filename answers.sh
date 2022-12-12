@@ -43,18 +43,14 @@ WHERE ID = 4
 
 Joins: 
 
-14- CREATE TABLE made_date (
-	name TEXT,
-	Comp_Name TEXT,
-	Comp_Date INTEGER
-)
+14- SELECT employees.Name, employees.Company, companies.Date FROM employees
+INNER JOIN companies ON companies.Name = employees.Company
 
-15- SELECT * FROM companies
-WHERE date < 2000
+15- SELECT employees.name FROM employees INNER JOIN companies ON employees.Company = companies.Name
+WHERE companies.Date < 2000
 
-16- SELECT Company FROM employees
-WHERE Role = "Graphic Designer"
-
+ 16- SELECT companies.Name From companies INNER JOIN employees ON employees.Company = companies.Name
+WHERE Role = "Graphic Designer";
 ---------------------------------------------------------
 
 Count & Filter: 
