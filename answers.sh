@@ -1,8 +1,8 @@
 Basic Queries:
 
-1- SELECT * FROM students
+1- SELECT name FROM students
 2- SELECT * FROM students where Age > 30
-3- SELECT * FROM students WHERE Age = 30 and Gender = "F"
+3- SELECT name FROM students WHERE Age = 30 and Gender = "F"
 4- SELECT Points FROM students WHERE name = "Alex"
 5- INSERT INTO students (name, Age, Gender, Points)
 VALUES ("Abdellatif", "21", "M", 350)
